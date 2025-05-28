@@ -3,4 +3,5 @@ RUN dnf install nginx -y
 RUN rm -rf /usr/share/nginx/html/index.html
 ADD https://github.com/juturuajay1/dockerfiles/blob/main/From/Dockerfile /usr/share/nginx/html/index.html
 RUN chmod +r /usr/share/nginx/html/index.html
+ADD sample-1.tar /tmp/
 CMD ["nginx", "-g", "daemon off;"]

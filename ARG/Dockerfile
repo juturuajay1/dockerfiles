@@ -1,4 +1,5 @@
-FROM almalinux:9
+ARG version
+FROM almalinux:${version:-9}
 ENV course="Devops with AWS" \
     trainer="Ajay" 
 #here user1 is key, someuser is default value
